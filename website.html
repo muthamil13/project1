@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Beautiful Homepage</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(45deg, #6a11cb, #2575fc);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+
+        .container {
+            text-align: center;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 50px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+            max-width: 90%;
+            width: 600px;
+        }
+
+        .container h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            animation: fadeIn 2s ease-out;
+        }
+
+        .container p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            animation: fadeIn 3s ease-out;
+        }
+
+        .button {
+            background: #f39c12;
+            color: #fff;
+            padding: 15px 30px;
+            border: none;
+            font-size: 1rem;
+            border-radius: 30px;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 30px;
+            transition: background 0.3s ease;
+        }
+
+        .button:hover {
+            background: #e67e22;
+        }
+
+        .image-container {
+            position: relative;
+            margin-top: 30px;
+        }
+
+        .image-container img {
+            width: 100%;
+            border-radius: 15px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.1);
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px;
+            }
+
+            .container h1 {
+                font-size: 2.5rem;
+            }
+
+            .container p {
+                font-size: 1rem;
+            }
+
+            .button {
+                padding: 12px 25px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 20px;
+            }
+
+            .container h1 {
+                font-size: 2rem;
+            }
+
+            .container p {
+                font-size: 0.9rem;
+            }
+
+            .button {
+                padding: 10px 20px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to My Beautiful Homepage</h1>
+        <p>This page is designed with beautiful gradients, animations, and interactive effects. It’s fully responsive and will adjust to different screen sizes seamlessly.</p>
+        <button class="button">Learn More</button>
+        
+        <div class="image-container">
+            <img src="https://via.placeholder.com/600x400" alt="Beautiful Image">
+        </div>
+    </div>
+</body>
+</html>
